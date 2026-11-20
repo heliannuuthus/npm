@@ -1,0 +1,16 @@
+{
+  "name": "@heliannuuthus/obsidian-markdown",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs" },
+  "dependencies": {
+    "@heliannuuthus/markdown": "workspace:*",
+    "markmap-lib": "0.18.12",
+    "markmap-view": "0.18.12",
+    "rehype-stringify": "^10.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "obsidian": "1.14.4"
+  }
+}

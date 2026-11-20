@@ -1,0 +1,9 @@
+{
+  "id": "shared-blog-markdown",
+  "name": "Shared Blog Markdown",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.7",
+  "description": "Preview Markdown and Markdown partials using the blog's remark directives.",
+  "author": "heliannuuthus",
+  "isDesktopOnly": false
+}
