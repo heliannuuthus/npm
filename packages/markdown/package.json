@@ -1,0 +1,28 @@
+{
+  "name": "@heliannuuthus/markdown",
+  "version": "1.0.0",
+  "type": "module",
+  "files": ["src"],
+  "exports": {
+    ".": "./src/index.ts",
+    "./source": "./src/source.ts",
+    "./glossary": "./src/glossary.ts",
+    "./mermaid": "./src/remark/directives/mermaid.ts",
+    "./prose-classes": "./src/prose-classes.ts"
+  },
+  "dependencies": {
+    "@types/hast": "^3.0.4",
+    "@types/js-yaml": "^4.0.9",
+    "isomorphic-mermaid": "^0.1.1",
+    "js-yaml": "^4.1.1",
+    "rehype-slug": "^6.0.0",
+    "remark-directive": "^4.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "unified": "^11.0.5",
+    "unist-util-select": "^5.1.0",
+    "unist-util-visit": "^5.1.0"
+  }
+}

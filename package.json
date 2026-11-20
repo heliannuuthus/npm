@@ -1,0 +1,14 @@
+{
+  "name": "heliannuuthus-npm-workspace",
+  "private": true,
+  "packageManager": "pnpm@10.32.1",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build:obsidian": "pnpm --filter @heliannuuthus/obsidian-markdown build"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "~6.0.2"
+  }
+}
