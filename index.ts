@@ -6,17 +6,15 @@ import remarkMath from "remark-math";
 import remarkDirective from "remark-directive";
 import remarkRehype from "remark-rehype";
 import rehypeSlug from "rehype-slug";
-import {
-  remarkAdmonition,
-  remarkCollapse,
-  remarkHint,
-  remarkTerminology,
-  remarkTabs,
-  remarkMarkmap,
-  remarkExternalLink,
-  remarkText,
-  remarkSteps
-} from "./remark/directives";
+import { remarkAdmonition } from "./remark-admonition";
+import { remarkCollapse } from "./remark-collapse";
+import { remarkHint } from "./remark-hint";
+import { remarkTerminology } from "./remark-terminology";
+import { remarkTabs } from "./remark-tabs";
+import { remarkMarkmap } from "./remark-markmap";
+import { remarkExternalLink } from "./remark-external-link";
+import { remarkText } from "./remark-text";
+import { remarkSteps } from "./remark-steps";
 
 type MarkdownOptions = Parameters<typeof remarkTerminology>[0] & {
   mermaid?: Plugin;

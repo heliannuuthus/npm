@@ -1,4 +1,4 @@
-import { visit, setHast } from "./utils";
+import { visit, setHast } from "../directive-utils";
 
 export const remarkSteps = () => (tree: any) => {
   visit(tree, (node: any) => {

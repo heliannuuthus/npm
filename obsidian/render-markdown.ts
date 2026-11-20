@@ -5,8 +5,8 @@ import {
   finishRenderMath, loadMathJax, loadPrism, renderMath, sanitizeHTMLToDom, setTooltip
 } from "obsidian";
 import rehypeStringify from "rehype-stringify";
-import { createMarkdownProcessor } from "@heliannuuthus/markdown";
-import type { Term } from "@heliannuuthus/markdown/glossary";
+import { createMarkdownProcessor } from "../index";
+import type { Term } from "../glossary";
 
 type TermEntry = Pick<Term, "slug" | "title" | "definition" | "aliases">;
 declare const BLOG_TERMS: TermEntry[];

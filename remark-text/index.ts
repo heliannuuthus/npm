@@ -1,4 +1,4 @@
-import { visit, setHast } from "./utils";
+import { visit, setHast } from "../directive-utils";
 
 const COLOR_MAP: Record<string, string> = {
   danger: "text-danger",

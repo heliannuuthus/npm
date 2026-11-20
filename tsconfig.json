@@ -11,5 +11,5 @@
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": ["packages/**/*.ts", "apps/**/*.ts"]
+  "include": ["*.ts", "remark-*/index.ts", "rehype-*/index.ts", "obsidian/*.ts"]
 }

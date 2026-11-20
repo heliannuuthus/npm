@@ -2,7 +2,7 @@ import { build } from "esbuild";
 import { copyFile, readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
-import { readGlossary } from "@heliannuuthus/markdown/glossary";
+import { readGlossary } from "../glossary.ts";
 
 const { values } = parseArgs({ options: { "glossary-dir": { type: "string" } } });
 const pluginDir = fileURLToPath(new URL("./", import.meta.url));

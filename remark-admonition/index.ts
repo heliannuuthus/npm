@@ -1,4 +1,4 @@
-import { visit, setHast, wrapChildren, escapeHtml } from "./utils";
+import { visit, setHast, wrapChildren, escapeHtml } from "../directive-utils";
 
 const ADMONITION_TYPES = ["tip", "note", "warning", "danger", "info", "caution", "nerd"];
 

@@ -1,4 +1,4 @@
-import { visit, setHast, escapeHtml } from "./utils";
+import { visit, setHast, escapeHtml } from "../directive-utils";
 
 export const remarkCollapse = () => (tree: any) => {
   visit(tree, (node: any) => {
