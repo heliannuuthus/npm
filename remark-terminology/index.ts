@@ -1,5 +1,5 @@
-import { visit, setHast } from "./utils";
-import type { Term } from "../../glossary";
+import { visit, setHast } from "../directive-utils";
+import type { Term } from "../glossary";
 
 const extractText = (node: any): string => {
   if (node.type === "text") return node.value || "";

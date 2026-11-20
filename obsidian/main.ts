@@ -1,5 +1,5 @@
 import { FileView, Notice, Plugin, TFile, getFrontMatterInfo, normalizePath } from "obsidian";
-import { cleanMarkdownBody, getMarkdownImports, inlineMarkdownImports } from "@heliannuuthus/markdown/source";
+import { cleanMarkdownBody, getMarkdownImports, inlineMarkdownImports } from "../source";
 import { renderMarkdown, type MarkdownPreview } from "./render-markdown";
 
 const VIEW_TYPE = "shared-blog-markdown";

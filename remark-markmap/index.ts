@@ -1,4 +1,4 @@
-import { visit } from "./utils";
+import { visit } from "../directive-utils";
 
 export const remarkMarkmap = () => (tree: any) => {
   visit(tree, (node: any) => {

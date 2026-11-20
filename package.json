@@ -1,14 +1,44 @@
 {
-  "name": "heliannuuthus-npm-workspace",
+  "name": "@heliannuuthus/npm",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
+  "files": ["*.ts", "remark-*/index.ts", "rehype-*/index.ts"],
+  "exports": {
+    ".": "./index.ts",
+    "./source": "./source.ts",
+    "./glossary": "./glossary.ts",
+    "./remark-*": "./remark-*/index.ts",
+    "./rehype-*": "./rehype-*/index.ts"
+  },
   "packageManager": "pnpm@10.32.1",
   "engines": { "node": ">=24" },
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "build:obsidian": "pnpm --filter @heliannuuthus/obsidian-markdown build"
+    "build:obsidian": "node obsidian/build.mjs"
+  },
+  "dependencies": {
+    "@types/hast": "^3.0.4",
+    "@types/js-yaml": "^4.0.9",
+    "isomorphic-mermaid": "^0.1.1",
+    "js-yaml": "^4.1.1",
+    "rehype-slug": "^6.0.0",
+    "remark-directive": "^4.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "unified": "^11.0.5",
+    "unist-util-select": "^5.1.0",
+    "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
+    "esbuild": "^0.28.2",
+    "markmap-lib": "0.18.12",
+    "markmap-view": "0.18.12",
+    "obsidian": "1.14.4",
+    "rehype-stringify": "^10.0.1",
     "typescript": "~6.0.2"
   }
 }

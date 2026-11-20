@@ -1,4 +1,4 @@
-import { visit, setHast } from "./utils";
+import { visit, setHast } from "../directive-utils";
 
 const isProduction = process.env.NODE_ENV === "production";
 

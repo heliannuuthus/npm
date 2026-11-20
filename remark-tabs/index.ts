@@ -1,4 +1,4 @@
-import { visit, setHast } from "./utils";
+import { visit, setHast } from "../directive-utils";
 
 export const remarkTabs = () => {
   const renderTabs = (node: any) => {
